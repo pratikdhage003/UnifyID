@@ -48,8 +48,11 @@ public class RSAKeyPairGenerator {
 
 		}
 		pass[2] = c_e;
-//		RSAImpl rsaI = new RSAImpl();
-//		rsaI.assignRSA(pass[0], pass[1], pass[2]);
+
+		/*
+		 * 
+		 * 
+		 * */
 	}
 
 	/*
