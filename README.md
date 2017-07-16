@@ -1,1 +1,1 @@
-# Java based implementation for generation of RSA Key Pair from Random numbers
+# Java based implementation for generation of RSA Key Pair using truly random numbers generated from random.org  
