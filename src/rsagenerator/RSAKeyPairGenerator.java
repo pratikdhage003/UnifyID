@@ -22,10 +22,8 @@ public class RSAKeyPairGenerator {
 		int count = 2;
 		int[] arr = new int[3];
 		/*
-		 * In this section, we read the output that is coming from the GET
-		 * request and check for Prime numbers and then call the RSA Algorithm .
-		 * We also generate the inputs required for running the RSA Algorithm at
-		 * this point.
+		 * 
+		 * generating the feeds for executing the RSA Algorithm
 		 */
 		while (bufferedReader.readLine() != null && count > 0) {
 			num = Integer.parseInt(bufferedReader.readLine());
@@ -51,7 +49,7 @@ public class RSAKeyPairGenerator {
 	}
 
 	/*
-	 * Check if the input coming is a prime number or no
+	 * checking if number is Prime
 	 */
 	public static boolean isPrime(int n) {
 		if (n > 2 && (n & 1) == 0)
