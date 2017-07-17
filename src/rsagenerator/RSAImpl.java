@@ -4,7 +4,7 @@ import java.math.BigInteger;
 import java.util.Random;
 
 public class RSAImpl {
-	private int bitlength = 1024;
+	private int bitlength = 512;
 
 	/*
 	 * Generating public and private keys using RSA algorithm
