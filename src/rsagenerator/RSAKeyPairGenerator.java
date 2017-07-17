@@ -19,17 +19,17 @@ public class RSAKeyPairGenerator {
 		httpConnection.setRequestMethod("GET");
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(httpConnection.getInputStream()));
 		int num = 0;
-		int count = 2;
+		int count = 0;
 		int[] arr = new int[3];
 		/*
 		 * 
 		 * generating the feeds for executing the RSA Algorithm
 		 */
-		while (bufferedReader.readLine() != null && count > 0) {
+		while (bufferedReader.readLine() != null && count > 2) {
 			num = Integer.parseInt(bufferedReader.readLine());
 			if (isPrime(num)) {
 				arr[count] = num;
-				count--;
+				count++;
 			}
 		}
 		bufferedReader.close();
